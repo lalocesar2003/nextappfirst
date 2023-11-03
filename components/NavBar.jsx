@@ -1,0 +1,21 @@
+import Link from 'next/link'
+import React from 'react'
+
+function NavBar() {
+  return (
+    <nav className='bg-slate-400 mb-8 flex justify-between items-center px-20 p-3 font-bold text-black'>
+        <Link href="/" >
+        home
+        </Link>
+        <ul>
+            <li>
+                <Link href="/about">
+                    About
+                </Link>
+            </li>
+        </ul>
+    </nav>
+  )
+}
+
+export default NavBar
